@@ -17,7 +17,7 @@ import { AchievmentsComponent } from './components/achievments/achievments.compo
     ProjectsComponent,
     OpensourceComponent,
     SkillsComponent,
-    AchievmentsComponent
+    AchievmentsComponent,
   ],
   imports: [
     BrowserModule

@@ -11,4 +11,11 @@ export class UserDataService {
     phoneNumber: '8219601395',
     githubURL: 'github.com/heyimShivam'
   }
+  css ={
+    brightPurple: '#C3073F',
+    midPurple: '#950740',
+    darkPurple: '#6F2232',
+    midGray: '#4E4E50',
+    darkGray: '#1A1A1D'
+  }
 }
