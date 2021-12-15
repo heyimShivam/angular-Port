@@ -2,5 +2,31 @@
     <div id="particles-js"></div>
 </div>
 <div class="nav-bar">
-    This is Nav
+    <div class="container-fluid">
+      <ul class="nav-ul">
+        <li class="nav-li" [style]='{float:"left"}'>Shivam<span class="hand">👋</span></li>
+        <li *ngIf="showDesktopNav"><a class="resume-btn">Resume</a></li>
+        <li *ngIf="showDesktopNav">Projects</li>
+        <li *ngIf="showDesktopNav">Any</li> 
+        <li *ngIf="showDesktopNav">Any</li>
+        <li *ngIf="showDesktopNav">Home</li>
+        <li *ngIf="!showDesktopNav" (click)='ToggleFullScreenMenu()'>Bars</li>
+      </ul>
+    </div>
+</div>
+
+<div [@openClose]="fullScreenMenu" class="mobileNav">
+  <div class="onlyBack"></div>
+  <div class="container">
+    <div class="row">
+      <ul class="mobile-nav-full">
+        <li>Home</li>
+        <li>Projects</li>
+        <li>Any</li> 
+        <li>Any</li>
+        <li><a>Resume</a></li>
+        <li (click)='ToggleFullScreenMenu()'>cross</li>
+        </ul>
+    </div>
+  </div>
 </div>

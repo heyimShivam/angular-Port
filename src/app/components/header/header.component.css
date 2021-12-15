@@ -1,4 +1,89 @@
 #particles-js {
-    height: 100vh;
+    height: 101vh;
     background-color: #1A1A1D;
+    border-bottom:1px double #C3073F ;
+}
+.nav-bar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin-bottom: 59px;
+}
+.nav-ul{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    color: white;
+    list-style: none;
+    background-color: #1A1A1D;
+    font-weight: 500;
+}
+
+.nav-ul li{
+  padding: 18px 20px;
+  float: right;
+}
+.hand {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+    font-size: 23px;
+    position: absolute;
+    top:13px;
+    padding-left: 10px;
+    filter: sepia(100%) grayscale(100.0);
+  }
+.resume-btn{
+  background-color: #C3073F;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 12px;
+
+}
+.mobileNav{
+    position: fixed;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    animation: mobileNavAnimation 1s;
+    animation-direction: alternate;
+}
+.onlyBack{
+    background-color: #1A1A1D;
+    width: 100vw;
+    height: 100vh;
+    opacity: 97%;
+}
+.mobile-nav-full{
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.mobile-nav-full li{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+@keyframes mobileNavAnimation {
+    0%   {left: 600px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
 }
