@@ -25,11 +25,8 @@ declare let particlesJS: any;
         display: 'block',
         right:'0px',
       })),
-      transition('open <=> closed', [
+      transition('closed => open', [
         animate('1s')
-      ]),
-      transition ('* => void', [
-        animate ('1s')
       ])
     ])
   ]

@@ -73,7 +73,7 @@
     padding: 10px;
 }
 @keyframes mobileNavAnimation {
-    0%   {left: 600px; top: 0px;}
+    0%   {left: 650px; top: 0px;}
     100% {left: 0px; top: 0px;}
 }
 

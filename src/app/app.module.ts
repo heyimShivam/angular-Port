@@ -9,6 +9,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { OpensourceComponent } from './components/opensource/opensource.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { AchievmentsComponent } from './components/achievments/achievments.component';
+import { SocialLinksComponent } from './components/social-links/social-links.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AchievmentsComponent } from './components/achievments/achievments.compo
     OpensourceComponent,
     SkillsComponent,
     AchievmentsComponent,
+    SocialLinksComponent,
   ],
   imports: [
     BrowserModule,
