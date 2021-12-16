@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { UserDataService } from 'src/app/user-data.service';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  projectDetails: any;
+  constructor(
+    private UserDataService: UserDataService
+  ) { }
 
   ngOnInit(): void {
+    this.projectDetails = this.UserDataService.projectDetails;
   }
 
 }

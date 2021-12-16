@@ -1,1 +1,32 @@
-<p>projects works!</p>
+<div class="container-fluid projects" id="projects">
+    <div class="row heading">
+        <h1 class="d-flex justify-content-center">Projects</h1>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <hr class="aboutHR">
+    </div>
+    <div class="row d-flex justify-content-center">
+       <div class="col-md-4 d-flex justify-content-center"  *ngFor="let project of projectDetails">
+          <div class="card " id="cardDisplay" style="width: 75%">
+            <div class="row d-flex justify-content-center">
+                <img class="card-img-top " [src]="project.image">
+            </div>
+            <div class="row d-flex justify-content-center">
+                <h5 class="card-title d-flex justify-content-center">{{project.name}}</h5>
+            </div>
+            <div class="card-body">
+              <div class="row d-flex justify-content-center">
+                <hr class="cardHR">
+            </div>
+              <p class="card-text">{{project.content}}</p>
+              <div class="row d-flex justify-content-center">
+                  <div class="col d-flex justify-content-center">
+                    <a [href]="project.githubLink"><img class="m-2" src="./assets/icons/github.png" width="33px"></a>
+                    <a *ngIf="project.workingLink" [href]="project.workingLink"><img class="m-2" src="./assets/icons/hastag.png" width="33px"></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
