@@ -1,0 +1,17 @@
+.love{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.footerHr{
+    background-color: #C3073F;
+    width: 70%;
+}
+.footer{
+    padding: 20px;
+    background-color: #1A1A1D;
+    color: white;
+}
+.footerDes{
+    text-align:center;
+    font-size: 14px;
+}

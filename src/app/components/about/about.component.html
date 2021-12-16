@@ -1,0 +1,31 @@
+
+<div class="conatiner innerAbout" id="about">
+    <div class="heading">
+        <h1>About Me</h1>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <hr class="aboutHR">
+    </div>
+    <div class="row d-flex justify-content-center">
+            <img [src]="userData.image" class="myImage">
+    </div>
+    <div class="row">
+            <div class="col mainR">
+            <p class="contentMe mainR"> 💬 student, self-taught coder<br>
+                📙 studies at National Institute of Technology, Hamirpur<br>
+                🔭 intrested in web-development, open-source, iot, anything tech<br>
+                🖥 develops webapps. back-end works.<br>
+                😘 loves graphic designing<br>
+                📚 branch {{userData.Branch}}<br>
+                🧩 likes gaming. cycling. and obviously coding
+            </p>
+    </div>
+    </div>
+    <div class="row soicalLinks">
+        <ul class="d-flex justify-content-center">
+            <li *ngFor="let social of socialMedia">
+                <a [href]="social.profileLink"><img [src]="social.imageLink" class="socialIcons" width="37px"></a>
+            </li>
+        </ul>
+    </div>
+</div>

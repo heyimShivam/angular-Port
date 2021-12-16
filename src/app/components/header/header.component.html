@@ -6,10 +6,11 @@
       <ul class="nav-ul">
         <li class="nav-li" [style]='{float:"left"}'>Shivam<span class="hand">👋</span></li>
         <li *ngIf="showDesktopNav"><a class="resume-btn">Resume</a></li>
-        <li *ngIf="showDesktopNav">Projects</li>
-        <li *ngIf="showDesktopNav">Any</li> 
-        <li *ngIf="showDesktopNav">Any</li>
-        <li *ngIf="showDesktopNav">Home</li>
+        <a href="#"><li *ngIf="showDesktopNav">Projects</li></a>
+        <a href="#about"><li *ngIf="showDesktopNav">About</li> </a>
+        <a href="#timeline"><li *ngIf="showDesktopNav">Timeline</li></a>
+        <a href="#"><li *ngIf="showDesktopNav">Home</li></a>
+      
         <li *ngIf="!showDesktopNav" (click)='ToggleFullScreenMenu()'>Bars</li>
       </ul>
     </div>
@@ -20,11 +21,11 @@
   <div class="container">
     <div class="row">
       <ul class="mobile-nav-full">
-        <li>Home</li>
-        <li>Projects</li>
-        <li>Any</li> 
-        <li>Any</li>
-        <li><a>Resume</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#about">About</a></li> 
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#">Resume</a></li>
         <li (click)='ToggleFullScreenMenu()'>cross</li>
         </ul>
     </div>

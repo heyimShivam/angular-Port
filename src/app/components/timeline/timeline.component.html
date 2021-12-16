@@ -1,0 +1,25 @@
+<div class="container timelineTab" id="timeline">
+
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <h1>TimeLine</h1>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col  d-flex justify-content-center">
+            <hr class="timeLineHR">
+        </div>
+    </div>
+
+    <div class="rb-container d-flex justify-content-center">
+        <ul class="rb">
+          <li class="rb-item" *ngFor="let timeData of timelineData">
+            <div class="timestamp">
+              {{timeData.year}}
+            </div>
+            <div class="item-title">{{timeData.content}}</div>
+          </li>
+        </ul>
+    </div>
+</div>

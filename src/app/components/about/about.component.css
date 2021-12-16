@@ -1,0 +1,45 @@
+.mainR{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.outerAbout{
+    color: white;
+    padding: 20px;
+}
+.contentMe{
+    font-size: 17px;
+}
+.aboutHR{
+    margin-top: 5px;
+    background-color: white;
+    width: 70%;
+}
+.innerAbout{
+    box-shadow: 0px 0px 9px 1px #333;
+    color: white;
+    padding: 30px;
+    background-color: #6F2232;
+}
+.heading{
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    padding: 8px;
+}
+.socialIcons{
+    filter: invert(100%);
+}
+.myImage{
+    margin-top: 30px;
+    width: 230px;
+    border-radius: 100%;
+    overflow: hidden;
+}
