@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { ParticlesConfig } from './particles-config';
+import { UserDataService } from 'src/app/user-data.service';    
 import {
   trigger,
   state,
@@ -34,8 +35,11 @@ declare let particlesJS: any;
 export class HeaderComponent implements OnInit {
   showDesktopNav: boolean;
   fullScreenMenu: string = 'open';
-
-  constructor() { 
+  userDetails: any;
+  userDetailsList:any;
+  constructor(
+    private userDataService: UserDataService
+  ) { 
     if(window.innerWidth >= 650){
       this.showDesktopNav = true;
     }else{
@@ -62,6 +66,8 @@ export class HeaderComponent implements OnInit {
 
   public ngOnInit(): void {
     this.invokeParticles();
+    this.userDetails = this.userDataService.myDetails;     
+    this.userDetailsList = this.userDataService.myDetails.userDetailsList;     
   }
 
   public invokeParticles(): void {

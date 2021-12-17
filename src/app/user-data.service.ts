@@ -25,7 +25,9 @@ export class UserDataService {
     name: "Shivam",
     Branch: "electrical engineering",
     image: './assets/shivam.jpg',
-    college: "NIT-H"
+    college: "NIT-H",
+    details:'Student | Web Developer | TECH ENTHUSIAST',
+    userDetailsList: ['STUDENT', 'DEVELOPER', 'TECH ENTHUSIAST'],
   }
 
   socialMedia = [
@@ -67,20 +69,6 @@ export class UserDataService {
   projectDetails = [
     {
       name:"Portfolio",
-      image:"./assets/shivam.jpg",
-      content:"Some quick example text to build on the card title and make up the bulk of the card's content.",
-      githubLink:"#",
-      workingLink:"#"
-    },
-    {
-      name:"portfolio",
-      image:"./assets/shivam.jpg",
-      content:"Some quick example text to build on the card title and make up the bulk of the card's content.",
-      githubLink:"#",
-      workingLink:"#"
-    },
-    {
-      name:"portfolio",
       image:"./assets/shivam.jpg",
       content:"Some quick example text to build on the card title and make up the bulk of the card's content.",
       githubLink:"#",

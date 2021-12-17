@@ -1,5 +1,44 @@
 <div class="header">
     <div id="particles-js"></div>
+    <div class="container d-flex justify-content-center mainFeaderInfo">
+      <div class="block">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <div class="nameOfUser hiSize">Hey, I'M</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <div class="nameOfUser">{{userDetails.name}}</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <div class="decs tw"><ngtypewriter [StringList]='userDetailsList' [speed]='1000'></ngtypewriter></div>
+          </div>
+        </div>
+
+<br><br>
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <div class="decs">WELCOME TO MY WEBSITE !</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  
+    <div class="container-fluid downArrow">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <span class="material-icons arrow">
+            keyboard_double_arrow_right
+            </span>
+        </div>
+      </div>
+    </div>
 </div>
 <div class="nav-bar">
     <div class="container-fluid">
@@ -11,7 +50,10 @@
         <a href="#timeline"><li *ngIf="showDesktopNav">Timeline</li></a>
         <a href="#"><li *ngIf="showDesktopNav">Home</li></a>
       
-        <li *ngIf="!showDesktopNav" (click)='ToggleFullScreenMenu()'>Bars</li>
+        <li *ngIf="!showDesktopNav" (click)='ToggleFullScreenMenu()'><span class="material-icons">
+          segment
+          </span>
+          </li>
       </ul>
     </div>
 </div>
@@ -26,8 +68,11 @@
         <li><a href="#about">About</a></li> 
         <li><a href="#timeline">Timeline</a></li>
         <li><a href="#">Resume</a></li>
-        <li (click)='ToggleFullScreenMenu()'>cross</li>
+        <li (click)='ToggleFullScreenMenu()' class="plus">+</li>
         </ul>
     </div>
   </div>
 </div>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+  </style>

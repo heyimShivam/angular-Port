@@ -96,3 +96,44 @@ a{
    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
 }
+.mainFeaderInfo{
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nameOfUser{
+    font-family: 'Acme', sans-serif;
+    font-weight: 400;
+    font-size: 90px;
+}
+.decs{
+font-size: 2.5vh;
+
+}
+.tw{
+    color: rgb(177, 177, 177);
+}
+.hiSize{
+    font-size: 3.8vh;
+}
+.downArrow{
+    position: absolute;
+    width: 100%;
+    bottom: 8px;
+    color: white;
+}
+.arrow{
+    font-size: 22px;
+    transform: rotate(90deg);
+}
+.arrow:hover{
+    margin-bottom:5px ;
+    transition: 1ms;
+}
+.plus{
+    transform: rotate(-45deg);
+    font-weight: 900;
+}

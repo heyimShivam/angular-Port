@@ -10,7 +10,8 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { AchievmentsComponent } from './components/achievments/achievments.component';
 import { AboutComponent } from './components/about/about.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
-
+import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
+    
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { TimelineComponent } from './components/timeline/timeline.component';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    AngularTypewriterEffectModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
