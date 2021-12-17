@@ -10,7 +10,7 @@ export class UserDataService {
     name: 'Shivam',
     email: 'shivamthalwal@gmail.com',
     phoneNumber: '8219601395',
-    githubURL: 'github.com/heyimShivam'
+    githubURL: 'github.com/heyimShivam',
   }
 
   css ={
@@ -28,6 +28,7 @@ export class UserDataService {
     college: "NIT-H",
     details:'Student | Web Developer | TECH ENTHUSIAST',
     userDetailsList: ['STUDENT', 'DEVELOPER', 'TECH ENTHUSIAST'],
+    resume:'https://docs.google.com/document/d/1QGUNYj0THySbxxIbYmTFf3jq7DrvyRsUvlPquCxsqdA/edit?usp=sharing'
   }
 
   socialMedia = [
@@ -50,6 +51,10 @@ export class UserDataService {
     {
       imageLink: "./assets/icons/twitter.png",
       profileLink: "https://twitter.com/heyimshivam"
+    },
+    {
+      imageLink: "./assets/icons/mail.png",
+      profileLink: "mailto:shivamthalwal@gmail.com"
     }
   ]
   experience =[
@@ -87,44 +92,44 @@ export class UserDataService {
 
   projectDetails = [
     {
-      name:"Idea shareing app frontend",
+      name:"Idea sharing app frontend",
       image:"./assets/idea.jpg",
-      content:"Idea shareing app Frontend made in javascripts in Reactjs, bootstrap (MEAN Project).",
+      content:"Idea sharing app Frontend made in javascripts in Reactjs, bootstrap (MERN Project).",
       githubLink:"https://github.com/heyimShivam/Idea-Shareing-frontend",
       workingLink:"https://ideashareing-74dd3.firebaseapp.com/"
     },
     {
-      name:"Idea shareing app backend",
+      name:"Idea sharing app backend",
       image:"./assets/idea.jpg",
-      content:"Idea shareing app backend made in javascripts using nodejs, express, mongoose (MEAN Project).",
+      content:"Idea sharing app backend made in javascripts using nodejs, express, mongoose (MERN Project).",
       githubLink:"https://github.com/heyimShivam/idea-shareing-backend",
       workingLink:"https://ideashareing-74dd3.firebaseapp.com/"
     },
     {
       name:"Portfolio",
       image:"./assets/user.png",
-      content:"Portfolio Web-App made in typescript using angular as framework",
+      content:"Portfolio Web-App made in typescript using angular as framework with bootstrap.",
       githubLink:"https://github.com/heyimShivam/angular-Port",
       workingLink:"#"
     },
     {
       name:"Classroom",
       image:"./assets/classroom.png",
-      content:"Portfolio Web-App made in typescript using angular as framework",
+      content:"Classroom app made in javascript using framework reactjs tried to clone google classroom.",
       githubLink:"https://github.com/heyimShivam/ClassRoom-ReactJS",
       workingLink:""
     },
     {
       name:"Mind Game",
       image:"./assets/mindgame.jpg",
-      content:"Mind game made in HTML, CSS, JS. Enhance the memory capacity of the human mind.",
+      content:"Mind game made in HTML, CSS, Javascript. Enhance the memory capacity of the human mind.",
       githubLink:"https://github.com/heyimShivam/Mind-Game-",
       workingLink:"https://heyimshivam.github.io/Mind-Game-/"
     },
     {
       name:"To-Do list",
       image:"./assets/todo.png",
-      content:"Mind game made in HTML, CSS, JS. Enhance the memory capacity of the human mind.",
+      content:"To-Do List app made with HTML, CSS, Javascript. makes the user's day organize and efficient.",
       githubLink:"https://github.com/heyimShivam/ToDoList",
       workingLink:"https://heyimshivam.github.io/ToDoList/"
     }

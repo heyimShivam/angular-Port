@@ -44,7 +44,7 @@
     <div class="container-fluid">
       <ul class="nav-ul">
         <li class="nav-li" [style]='{float:"left"}'>Hey Viewers<span class="hand">👋</span></li>
-        <li *ngIf="showDesktopNav"><a class="resume-btn">Resume</a></li>
+        <li *ngIf="showDesktopNav"><a [href]="userDetails.resume" class="resume-btn">Resume</a></li>
         <a href="#projects"><li *ngIf="showDesktopNav">Projects</li></a>
         <a href="#timeline"><li *ngIf="showDesktopNav">Timeline</li></a>
         <a href="#about"><li *ngIf="showDesktopNav">About</li> </a>
@@ -69,7 +69,7 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#about">About</a></li> 
         <li><a href="#timeline">Timeline</a></li>
-        <li><a href="#">Resume</a></li>
+        <li><a [href]="userDetails.resume" >Resume</a></li>
         <li (click)='ToggleFullScreenMenu()' class="plus">+</li>
         </ul>
     </div>
