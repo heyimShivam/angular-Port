@@ -1,0 +1,36 @@
+<div class="container experienceContainer" id="experience">
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <h1>Experience</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col  d-flex justify-content-center">
+            <hr class="timeLineHR">
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-md-6 d-flex justify-content-center boxTms" *ngFor="let exp of experience">
+            <div class="card" style="width: 25rem; border-radius: 30px;">
+                <div class="card-img-top" style="border-top-left-radius: 30px; border-top-right-radius: 30px;" [style.background-color]="exp.color">
+                    <div class="text">{{exp.heading}}</div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <img  class="smallImage" [src]="exp.image">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title mainTitle d-flex justify-content-center">{{exp.myJob}}</h5>
+                  <h6 class="card-title d-flex yearText justify-content-center">{{exp.position}}</h6>
+                  <p class="card-text">{{exp.content}}</p>
+                  <a [href]="exp.siteLink" class="btn d-flex justify-content-center" style="color: white" [style.background-color]="exp.color">Go to organization</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    <br>
+</div>

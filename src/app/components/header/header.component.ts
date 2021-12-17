@@ -57,7 +57,7 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onWindowResize() {
-    if(window.innerWidth >= 650){
+    if(window.innerWidth >= 810){
       this.showDesktopNav = true;
     }else{
       this.showDesktopNav = false;

@@ -52,7 +52,26 @@ export class UserDataService {
       profileLink: "https://twitter.com/heyimshivam"
     }
   ]
-
+  experience =[
+    {
+      heading:"Oppia",
+      content:"Oppia is an online learning tool that enables anyone to easily create and share interactive activities (called 'explorations'). ",
+      color:"green",
+      myJob:"Frontend Developer",
+      image:"assets/oppia.png",
+      position:"2021 – Present",
+      siteLink:"https://www.oppia.org/",
+    },
+    {
+      heading:"RoboSoc NIT-H",
+      content:"Robotics Society NIT-H provide students a place to pursue their interest in robotics by working on large and small scale robotics projects.",
+      color:"orange",
+      image:"assets/robosoc.png",
+      myJob:"Executive member",
+      position:"2020 – Present",
+      siteLink:"https://robosocnith.com/",
+    }
+  ]
   timeLine=[
     {
       year:'2006 - 2019',
@@ -68,25 +87,46 @@ export class UserDataService {
 
   projectDetails = [
     {
+      name:"Idea shareing app frontend",
+      image:"./assets/idea.jpg",
+      content:"Idea shareing app Frontend made in javascripts in Reactjs, bootstrap (MEAN Project).",
+      githubLink:"https://github.com/heyimShivam/Idea-Shareing-frontend",
+      workingLink:"https://ideashareing-74dd3.firebaseapp.com/"
+    },
+    {
+      name:"Idea shareing app backend",
+      image:"./assets/idea.jpg",
+      content:"Idea shareing app backend made in javascripts using nodejs, express, mongoose (MEAN Project).",
+      githubLink:"https://github.com/heyimShivam/idea-shareing-backend",
+      workingLink:"https://ideashareing-74dd3.firebaseapp.com/"
+    },
+    {
       name:"Portfolio",
-      image:"./assets/shivam.jpg",
-      content:"Some quick example text to build on the card title and make up the bulk of the card's content.",
-      githubLink:"#",
+      image:"./assets/user.png",
+      content:"Portfolio Web-App made in typescript using angular as framework",
+      githubLink:"https://github.com/heyimShivam/angular-Port",
       workingLink:"#"
     },
     {
-      name:"portfolio",
-      image:"./assets/shivam.jpg",
-      content:"Some quick example text to build on the card title and make up the bulk of the card's content.",
-      githubLink:"#",
-      workingLink:"#"
+      name:"Classroom",
+      image:"./assets/classroom.png",
+      content:"Portfolio Web-App made in typescript using angular as framework",
+      githubLink:"https://github.com/heyimShivam/ClassRoom-ReactJS",
+      workingLink:""
     },
     {
-      name:"portfolio",
-      image:"./assets/shivam.jpg",
-      content:"Some quick example text to build on the card title and make up the bulk of the card's content.",
-      githubLink:"#",
-      workingLink:"#"
+      name:"Mind Game",
+      image:"./assets/mindgame.jpg",
+      content:"Mind game made in HTML, CSS, JS. Enhance the memory capacity of the human mind.",
+      githubLink:"https://github.com/heyimShivam/Mind-Game-",
+      workingLink:"https://heyimshivam.github.io/Mind-Game-/"
+    },
+    {
+      name:"To-Do list",
+      image:"./assets/todo.png",
+      content:"Mind game made in HTML, CSS, JS. Enhance the memory capacity of the human mind.",
+      githubLink:"https://github.com/heyimShivam/ToDoList",
+      workingLink:"https://heyimshivam.github.io/ToDoList/"
     }
   ]
 }

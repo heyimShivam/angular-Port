@@ -11,6 +11,7 @@ import { AchievmentsComponent } from './components/achievments/achievments.compo
 import { AboutComponent } from './components/about/about.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
+import { ExperienceComponent } from './components/experience/experience.component';
     
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
     AchievmentsComponent,
     AboutComponent,
     TimelineComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,
