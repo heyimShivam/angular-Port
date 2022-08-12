@@ -1,28 +1,53 @@
-.card-img-top{
+.card-img-top {
     height: 155px;
     position: relative;
 }
-.card:hover{
+
+.card:hover {
     box-shadow: 0px 0px 10px 1px rgba(51, 51, 51, 0.493);
     transition: 5ms;
 }
-.boxTms{
+
+.boxTms {
     padding: 25px;
 }
-.mainTitle{
+
+.card-settings {
+    height: 500px;
+    position: relative;
+}
+.go-to-org-css {
+    position: absolute;
+    width: 90%;
+    left: 20px;
+    bottom: 15px;
+}
+.mainTitle {
     margin-top: 50px;
     text-transform: capitalize;
+    text-align: center;
 }
-.timeLineHR{
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.timeLineHR {
     background-color: #C3073F;
     border: 1px solid #C3073F;
     width: 70%;
 }
-.experienceContainer{
+
+.experienceContainer {
     padding-top: 65px;
     padding-bottom: 55px;
 }
-.text{
+
+.text {
     position: absolute;
     color: white;
     text-transform: capitalize;
@@ -31,15 +56,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.yearText{
+
+.yearText {
     margin-bottom: 25px;
 }
-.card-text{
-    text-align:center;
+
+.card-text {
+    text-align: center;
 }
-.smallImage{
-    width:100px;
+
+.smallImage {
+    width: 100px;
     border-radius: 50%;
-    position:absolute;
+    position: absolute;
     bottom: -50px;
 }

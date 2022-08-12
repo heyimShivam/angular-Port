@@ -43,7 +43,7 @@
 <div class="nav-bar">
     <div class="container-fluid">
       <ul class="nav-ul">
-        <li class="nav-li" [style]='{float:"left"}'>Hey Viewers<span class="hand">👋</span></li>
+        <li class="nav-li main-heading-text" [style]='{float:"left"}' [innerText]="'< Shivam Chaudhary />'"></li>
         <li *ngIf="showDesktopNav"><a [href]="userDetails.resume" class="resume-btn">Resume</a></li>
         <a href="#projects"><li *ngIf="showDesktopNav">Projects</li></a>
         <a href="#timeline"><li *ngIf="showDesktopNav">Timeline</li></a>

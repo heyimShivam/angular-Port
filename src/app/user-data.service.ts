@@ -60,21 +60,39 @@ export class UserDataService {
   experience =[
     {
       heading:"Oppia",
-      content:"Oppia is an online learning tool that enables anyone to easily create and share interactive activities (called 'explorations'). ",
-      color:"green",
-      myJob:"Frontend Developer",
+      content:"Oppia web is an open source, free, online learning platform to make quality education accessible for all. It has over 1M+ users, + 522 contributors and codebase has 4.6k stars on GitHub.",
+      color:"darkgreen",
+      myJob:"Angular Migration Reviewers - Team Member",
       image:"assets/oppia.png",
       position:"2021 – Present",
-      siteLink:"https://www.oppia.org/",
+      siteLink:"https://github.com/oppia/",
     },
     {
-      heading:"RoboSoc NIT-H",
+      heading:"GDSC NIT Hamirpur",
+      content:"Google Developer Student Clubs (GDSC) are community groups for college and university students interested in Google developer technologies. Web development team aims to empower web development among students",
+      color:"black",
+      image:"https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-dsc/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_NP7kmba.png",
+      myJob:"Web Development - Team Lead",
+      position:"2022 – Present",
+      siteLink:"https://gdsc.community.dev/national-institute-of-technology-nit-hamirpur/",
+    },
+    {
+      heading:"RoboSoc NIT Hamirpur",
       content:"Robotics Society NIT-H provide students a place to pursue their interest in robotics by working on large and small scale robotics projects.",
-      color:"orange",
+      color:"darkblue",
       image:"assets/robosoc.png",
-      myJob:"Executive member",
+      myJob:"Coordinator",
       position:"2020 – Present",
       siteLink:"https://robosocnith.com/",
+    },
+    {
+      heading:".EXE",
+      content:"It's the technical team of Computer Science & Engineering Department for technical fest NIMBUS at. NIT Hamirpur",
+      color:"darkred",
+      image:"https://media-exp1.licdn.com/dms/image/C510BAQEPPF8Z5PzT8w/company-logo_200_200/0/1554835222687?e=1668643200&v=beta&t=OWds84SqWT9qd0mprjjG24Q10vivoYLbwNTg0bD5nMg",
+      myJob:"Executive member",
+      position:"2020 – Present",
+      siteLink:"https://team-exe-website.herokuapp.com/",
     }
   ]
   timeLine=[

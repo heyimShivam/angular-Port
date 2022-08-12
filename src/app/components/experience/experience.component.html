@@ -1,4 +1,4 @@
-<div class="container experienceContainer" id="experience">
+<div class="container-fluid experienceContainer" id="experience">
     <div class="row">
         <div class="col d-flex justify-content-center">
             <h1>Experience</h1>
@@ -12,9 +12,10 @@
     </div>
 
     <br>
-    <div class="row">
-        <div class="col-md-6 d-flex justify-content-center boxTms" *ngFor="let exp of experience">
-            <div class="card" style="width: 25rem; border-radius: 30px;">
+    <div class="card-main-div">
+    <div class="cards-list">
+        <div class="boxTms" *ngFor="let exp of experience">
+            <div class="card card-settings" style="width: 24rem; border-radius: 30px;">
                 <div class="card-img-top" style="border-top-left-radius: 30px; border-top-right-radius: 30px;" [style.background-color]="exp.color">
                     <div class="text">{{exp.heading}}</div>
                     <div class="row">
@@ -24,13 +25,14 @@
                     </div>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title mainTitle d-flex justify-content-center">{{exp.myJob}}</h5>
+                  <h5 class="card-title mainTitle d-flex justify-content-center text-align-center">{{exp.myJob}}</h5>
                   <h6 class="card-title d-flex yearText justify-content-center">{{exp.position}}</h6>
                   <p class="card-text">{{exp.content}}</p>
-                  <a [href]="exp.siteLink" class="btn d-flex justify-content-center" style="color: white" [style.background-color]="exp.color">Go to organization</a>
+                  <a [href]="exp.siteLink" class="btn d-flex justify-content-center go-to-org-css" style="color: white" [style.background-color]="exp.color">Go to organization</a>
                 </div>
               </div>
         </div>
+    </div>
     </div>
     <br>
 </div>

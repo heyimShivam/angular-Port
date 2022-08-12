@@ -1,102 +1,149 @@
 #particles-js {
     height: 101vh;
     background-color: #1A1A1D;
-    border-bottom:1px double #C3073F ;
+    border-bottom: 1px double #C3073F;
 }
-.nav-bar{
+
+.nav-bar {
     position: sticky;
     top: 0;
     width: 100%;
     margin-bottom: 59px;
-    z-index:100;
+    z-index: 100;
 }
-.nav-ul{
+
+.nav-ul {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     color: white;
     list-style: none;
     background-color: #1A1A1D;
     font-weight: 500;
-    z-index:100;
+    z-index: 100;
 }
 
-.nav-ul li{
-  padding: 18px 20px;
-  float: right;
-  z-index:100;
+.nav-ul li {
+    padding: 18px 20px;
+    float: right;
+    z-index: 100;
 }
+
 .hand {
-    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s;        /* Change to speed up or slow down */
-    animation-iteration-count: infinite;  /* Never stop waving :) */
-    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
     display: inline-block;
     font-size: 23px;
     position: absolute;
-    
-    top:13px;
+
+    top: 13px;
     padding-left: 10px;
     filter: sepia(100%) grayscale(100.0);
-  }
-.resume-btn{
-  background-color: #C3073F;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  padding: 12px;
+}
+
+.resume-btn {
+    background-color: #C3073F;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 12px;
 
 }
-a{
+
+a {
     color: white;
     text-decoration: none;
 }
-.mobileNav{
+
+.mobileNav {
     position: fixed;
-    top:0;
+    top: 0;
     width: 100vw;
     height: 100vh;
     color: white;
     animation: mobileNavAnimation 1s;
     animation-direction: alternate;
-    z-index:100;
+    z-index: 100;
 }
-.onlyBack{
+
+.onlyBack {
     background-color: #1A1A1D;
     width: 100vw;
     height: 100vh;
     opacity: 97%;
 }
-.mobile-nav-full{
+
+.mobile-nav-full {
     list-style: none;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.mobile-nav-full li{
+
+.mobile-nav-full li {
     font-size: 20px;
     width: 100%;
     text-align: center;
     padding: 10px;
 }
+
 @keyframes mobileNavAnimation {
-    0%   {left: 650px; top: 0px;}
-    100% {left: 0px; top: 0px;}
+    0% {
+        left: 650px;
+        top: 0px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
 }
 
 @keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
 }
-.mainFeaderInfo{
+
+.mainFeaderInfo {
     position: absolute;
     color: white;
     text-transform: uppercase;
@@ -104,36 +151,51 @@ a{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.nameOfUser{
+
+.nameOfUser {
     font-family: 'Acme', sans-serif;
     font-weight: 400;
     font-size: 90px;
 }
-.decs{
-font-size: 2.5vh;
+
+.decs {
+    font-size: 2.5vh;
 
 }
-.tw{
+
+.tw {
     color: rgb(177, 177, 177);
 }
-.hiSize{
+
+.hiSize {
     font-size: 3.8vh;
 }
-.downArrow{
+
+.downArrow {
     position: absolute;
     width: 100%;
     bottom: 8px;
     color: white;
 }
-.arrow{
+
+.arrow {
     font-size: 22px;
     transform: rotate(90deg);
 }
-.arrow:hover{
-    margin-bottom:5px ;
+
+.arrow:hover {
+    margin-bottom: 5px;
     transition: 1ms;
 }
-.plus{
+
+.plus {
     transform: rotate(-45deg);
     font-weight: 900;
+}
+
+.main-heading-text {
+    font-family: cursive, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 19px;
+    font-weight: 800;
 }
